@@ -5,6 +5,10 @@ const expoConfig = require('eslint-config-expo/flat')
 module.exports = defineConfig([
   expoConfig,
   {
+    rules: {
+      'import/no-duplicates': ['off'],
+    },
     ignores: ['dist/*'],
   },
 ])
+
