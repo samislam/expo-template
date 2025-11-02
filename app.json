@@ -1,13 +1,18 @@
 {
   "expo": {
-    "name": "sclock",
-    "slug": "sclock",
+    "name": "",
+    "slug": "",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "sclock",
-    "userInterfaceStyle": "automatic",
+    "scheme": "",
     "newArchEnabled": true,
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/images/icon.png",
+    "web": {
+      "output": "static",
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png"
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +26,10 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "output": "static",
-      "bundler": "metro",
-      "favicon": "./assets/images/favicon.png"
+
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
     },
     "plugins": [
       "expo-router",
@@ -40,10 +45,6 @@
           }
         }
       ]
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
+    ]
   }
 }
